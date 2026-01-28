@@ -6,7 +6,7 @@ export default function Home() {
     >
       {/* Profile image with hover animation */}
       <img
-        src="/public/home.jpg"
+        src="/home.jpg"
         alt="Kanhai ks"
         className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full border-4 border-blue-400 shadow-2xl mb-6 lg:mb-0 lg:mr-12 object-cover
                    transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-3xl hover:saturate-150"

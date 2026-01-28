@@ -79,7 +79,7 @@ export default function Skills() {
 
       {/* Animated skills illustration */}
       <motion.img
-        src="/public/skills.png"
+        src="/skills.png"
         alt="Illustration representing various technical skills and technologies"
         className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-auto rounded-xl shadow-xl border-4 border-blue-200 object-contain mb-6 lg:mb-0 lg:ml-8 order-0 lg:order-1"
         variants={itemVariants}
