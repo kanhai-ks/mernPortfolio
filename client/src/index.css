@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Font Awesome */
+@import "@fortawesome/fontawesome-free/css/all.min.css"; /* Custom tweaks */
+html,
+body {
+  scroll-behavior: smooth;
+}
