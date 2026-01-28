@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
-import resumeFile from "/src/assets/kanhai-biodata.pdf";
 import toast, { Toaster } from "react-hot-toast";
 
 // Axios instance configuration for API calls
@@ -148,7 +147,7 @@ export default function Contact() {
             variants={itemVariants}
           >
             <motion.a
-              href={resumeFile}
+              href="/public/Kanhai-Kumar-Sah-Resume.pdf"
               download="Kanhai-Kumar-Sah-Resume.pdf"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold shadow-lg hover:from-blue-600 hover:to-indigo-700 transition-all duration-300"
               whileHover={{ scale: 1.05, y: -2 }}

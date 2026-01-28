@@ -1,5 +1,3 @@
-import resumeFile from "/src/assets/kanhai-biodata.pdf";
-
 export default function About() {
   return (
     <section
@@ -26,7 +24,7 @@ export default function About() {
         {/* Frontend skills paragraph */}
         <p className="text-lg md:text-xl leading-relaxed text-blue-800 max-w-2xl mb-6">
           On the frontend, I work with <strong>HTML</strong>,{" "}
-          <strong>CSS</strong>,<strong> TailwindCSS</strong>,{" "}
+          <strong>CSS</strong>, <strong>TailwindCSS</strong>,{" "}
           <strong>JavaScript</strong>, and <strong>React</strong>
           to design responsive, modern, and user‑friendly interfaces. I enjoy
           blending clean code with polished UI/UX to deliver complete solutions.
@@ -35,7 +33,7 @@ export default function About() {
         {/* Resume Button */}
         <div className="mt-6">
           <a
-            href={resumeFile}
+            href="/public/Kanhai-Kumar-Sah-Resume.pdf"
             download="Kanhai-Kumar-Sah-Resume.pdf"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold shadow-lg hover:from-blue-600 hover:to-indigo-700 transition-all duration-300"
           >
@@ -46,7 +44,7 @@ export default function About() {
 
       {/* Profile image with hover animation */}
       <img
-        src="/src/assets/about.jpg"
+        src="/public/about.jpg"
         alt="About Kanhai"
         className="w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-2xl shadow-2xl mb-8 lg:mb-0 lg:mr-12 object-cover border-4 border-blue-200 order-0 lg:order-1
                    transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-3xl hover:brightness-110"
