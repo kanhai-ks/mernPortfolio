@@ -6,7 +6,6 @@ export default function ScrollToTop() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Use requestAnimationFrame for smoother performance
       requestAnimationFrame(() => {
         setIsVisible(window.pageYOffset > 300);
       });
@@ -16,11 +15,18 @@ export default function ScrollToTop() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Custom slow scroll function
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    const scrollDuration = 800; // total duration in ms
+    const scrollStep = -window.scrollY / (scrollDuration / 16); // step per frame (~60fps)
+
+    const scrollInterval = setInterval(() => {
+      if (window.scrollY !== 0) {
+        window.scrollBy(0, scrollStep);
+      } else {
+        clearInterval(scrollInterval);
+      }
+    }, 16); // run every ~16ms
   };
 
   return (
