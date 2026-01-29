@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+
+  const links = ["home", "about", "services", "skills", "projects", "contact"];
 
   return (
     <motion.nav
@@ -13,13 +16,14 @@ export default function Navbar() {
     >
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo / Brand */}
-        <motion.a
-          href="#home"
+        <motion.div
           whileHover={{ scale: 1.05 }}
-          className="text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent transition-transform duration-300"
+          className="text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent transition-transform duration-300 cursor-pointer"
         >
-          Kanhai Kumar Sah
-        </motion.a>
+          <Link to="home" smooth={true} duration={500} offset={-70}>
+            Kanhai Kumar Sah
+          </Link>
+        </motion.div>
 
         {/* Mobile menu toggle button */}
         <motion.button
@@ -43,25 +47,26 @@ export default function Navbar() {
             open ? "block" : "hidden"
           } lg:block mt-4 lg:mt-0 absolute lg:relative top-full left-0 lg:top-auto lg:left-auto w-full lg:w-auto bg-blue-900/95 lg:bg-transparent backdrop-blur-lg lg:backdrop-blur-none p-4 lg:p-0 border-t lg:border-t-0 border-blue-700/50`}
         >
-          {["home", "about", "services", "skills", "projects", "contact"].map(
-            (id, index) => (
-              <motion.li
-                key={id}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.3 + index * 0.1 }}
-                className="transition-transform duration-300 hover:translate-y-[-2px]"
+          {links.map((id, index) => (
+            <motion.li
+              key={id}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.3 + index * 0.1 }}
+              className="transition-transform duration-300 hover:translate-y-[-2px]"
+            >
+              <Link
+                to={id}
+                smooth={true}
+                duration={500}
+                offset={-70} //
+                className="block py-2 lg:py-0 hover:text-blue-300 capitalize transition-colors duration-300 cursor-pointer"
+                onClick={() => setOpen(false)}
               >
-                <a
-                  href={`#${id}`}
-                  className="block py-2 lg:py-0 hover:text-blue-300 capitalize transition-colors duration-300"
-                  onClick={() => setOpen(false)}
-                >
-                  {id}
-                </a>
-              </motion.li>
-            ),
-          )}
+                {id}
+              </Link>
+            </motion.li>
+          ))}
         </motion.ul>
       </div>
     </motion.nav>
