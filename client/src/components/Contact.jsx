@@ -147,8 +147,8 @@ export default function Contact() {
             variants={itemVariants}
           >
             <motion.a
-              href="/resume/Kanhai-Kumar-Sah-Resume.pdf"
-              download="Kanhai-Kumar-Sah-Resume.pdf"
+              href="/resume/kanhai-biodata.pdf"
+              download="Kanhai-ks-Resume.pdf"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold shadow-lg hover:from-blue-600 hover:to-indigo-700 transition-all duration-300"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}

@@ -33,8 +33,8 @@ export default function About() {
         {/* Resume Button */}
         <div className="mt-6">
           <a
-            href="/resume/Kanhai-Kumar-Sah-Resume.pdf"
-            download="Kanhai-Kumar-Sah-Resume.pdf"
+            href="/resume/kanhai-biodata.pdf"
+            download="Kanhai-ks-Resume.pdf"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold shadow-lg hover:from-blue-600 hover:to-indigo-700 transition-all duration-300"
           >
             <i className="fas fa-file-download"></i> Download Resume
