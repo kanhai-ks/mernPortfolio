@@ -19,7 +19,7 @@ app.get("/", (req, res) => res.send("API is working.."));
 app.use("/api/contact", ContactRouter);
 
 // Port
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
