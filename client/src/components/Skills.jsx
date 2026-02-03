@@ -52,16 +52,16 @@ export default function Skills() {
           {/* Frontend development skills and technologies */}
           As a <strong>Frontend Developer</strong>, I work with{" "}
           <strong>HTML</strong>, <strong>CSS</strong>,{" "}
-          <strong>JavaScript</strong>, and modern libraries like
+          <strong>JavaScript</strong> and modern libraries like
           <strong>React</strong>, along with styling frameworks such as{" "}
           <strong>TailwindCSS</strong> and <strong>Bootstrap</strong> to build
           responsive and accessible interfaces. <br />
           <br />
           {/* Backend development expertise */}
           On the <strong>Backend</strong>, I specialize in{" "}
-          <strong>Node.js</strong> and <strong>Express.js</strong>, with
-          database expertise in <strong>MySQL</strong>, <strong>MongoDB</strong>
-          , and <strong>Mongoose</strong>, focusing on secure APIs and
+          <strong>Node.js</strong> and <strong>Express.js</strong> with database
+          expertise in <strong>MySQL</strong>, <strong>MongoDB</strong>,{" "}
+          <strong>Mongoose</strong>and focusing on secure APIs and
           authentication flows. <br />
           <br />
           {/* Development tools and version control */}

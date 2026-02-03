@@ -106,7 +106,7 @@ export default function Contact() {
             className="text-blue-700 mb-4 leading-relaxed"
             variants={itemVariants}
           >
-            I'm always open to discussing new opportunities, collaborations, or
+            I'm always open to discussing new opportunities, collaborations or
             just having a chat about technology.
           </motion.p>
 

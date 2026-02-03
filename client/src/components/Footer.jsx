@@ -22,7 +22,7 @@ export default function Footer() {
           <h3 className="text-xl font-bold text-white mb-3">About Me</h3>
           <p className="max-w-[380px] text-lg text-white">
             I'm <strong>Kanhai Kumar Sah</strong>, a backend developer and BCA
-            student. Passionate about building APIs, learning new tools, and
+            student. Passionate about building APIs, learning new tools and
             growing through teamwork and real-world experience.
           </p>
         </motion.div>
@@ -79,7 +79,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <i className="fas fa-map-marker-alt text-blue-300"></i>
-                <span>Bharatpur, Nepal</span>
+                <span>Ratnanagar-04, Chitwan, Nepal</span>
               </li>
             </ul>
           </motion.div>

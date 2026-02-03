@@ -22,15 +22,15 @@ export default function Home() {
         {/* Intro paragraph */}
         <p className="text-lg md:text-xl leading-relaxed text-blue-800 max-w-2xl mb-6">
           I’m a BCA student and backend developer focused on building secure
-          MERN applications. Skilled in Node.js, Express, MongoDB, and MySQL, I
+          MERN applications. Skilled in Node.js, Express, MongoDB, MySQL and
           love creating efficient APIs and connecting frontend with backend
           seamlessly.
         </p>
 
         {/* Extra paragraph (frontend + passion) */}
         <p className="text-lg md:text-xl leading-relaxed text-blue-800 max-w-2xl mb-6">
-          On the frontend, I work with HTML, CSS, TailwindCSS, JavaScript, and
-          React to design responsive, modern interfaces. Passionate about
+          On the frontend, I work with HTML, CSS, TailwindCSS, JavaScript and
+          React to design responsive and modern interfaces. Passionate about
           learning new technologies, I enjoy solving problems and deploying
           projects on platforms like Render and Railway.
         </p>

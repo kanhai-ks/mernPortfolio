@@ -16,17 +16,18 @@ export default function About() {
           I’m <strong>Kanhai Kumar Sah</strong>, a backend developer and BCA
           student passionate about building secure and scalable web
           applications. Skilled in <strong>Node.js</strong>,{" "}
-          <strong>Express</strong>, <strong>MongoDB</strong>, and
-          <strong> MySQL</strong>, I focus on creating efficient APIs, handling
-          authentication, and connecting frontend with backend seamlessly.
+          <strong>Express</strong>, <strong>MongoDB</strong>,
+          <strong> MySQL</strong>and I focus on creating efficient APIs,
+          handling authentication and connecting frontend with backend
+          seamlessly.
         </p>
 
         {/* Frontend skills paragraph */}
         <p className="text-lg md:text-xl leading-relaxed text-blue-800 max-w-2xl mb-6">
           On the frontend, I work with <strong>HTML</strong>,{" "}
           <strong>CSS</strong>, <strong>TailwindCSS</strong>,{" "}
-          <strong>JavaScript</strong>, and <strong>React</strong>
-          to design responsive, modern, and user‑friendly interfaces. I enjoy
+          <strong>JavaScript</strong> and <strong>React</strong>
+          to design responsive, modern and user‑friendly interfaces. I enjoy
           blending clean code with polished UI/UX to deliver complete solutions.
         </p>
 
